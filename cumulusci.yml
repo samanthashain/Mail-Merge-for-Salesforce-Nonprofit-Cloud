@@ -1,0 +1,27 @@
+minimum_cumulusci_version: '3.27.0'
+project:
+    name: Conga-Composer
+    package:
+        name: Conga-Composer
+        api_version: '50.0'
+    dependencies:
+        - github: 'https://github.com/SalesforceFoundation/NPSP'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/Conga-Composer/tests
+            options:
+                outputdir: robot/Conga-Composer/results
+
+    robot_testdoc:
+        options:
+            path: robot/Conga-Composer/tests
+            output: robot/Conga-Composer/doc/Conga-Composer_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
