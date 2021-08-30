@@ -6,7 +6,7 @@ The goal of this project is to document and share common use cases for Conga Com
 (1) Nonprofit organizations that use Salesforce for contact management, donor management, and/or program managament frequently need sophisticated "mail merge" technology for common practices, like donor tax letters, reporting, etc.
 (2) However, the technology to support these requirements are typically expensive, difficult to configure, and require time and technical expertise to get started.
 (3) Therefore, nonprofits are left with ineffective workarounds, no mail merge capabilities, or sky-high consulting bills.
-(4) Nonprofits that purchase a feature like Conga Composer can execute basic mail merges, but may not be fully leveraging the product due to time and capacity constraints.
+(4) Nonprofits that purchase a product like Conga Composer can execute basic mail merges, but may not be fully leveraging the product due to time and capacity constraints.
 
 # Proposed Solution
 (1) Create a free, public, and open source repository of common nonprofit Conga Composer solutions
@@ -15,6 +15,7 @@ The goal of this project is to document and share common use cases for Conga Com
 
 ## Definitions
 - Conga Composer is a paid, third party application that is primarily used with the Salesforce platform
+- Other common applications (all paid) include Apsona, Nintex (fka Drawloop), SDocs, Form Titan, etc.  This repo currently focuses on Conga Composer, but could eventually expand to other platforms.
 - A "Solution" is a bundle of directions that feeds data, templates, and preferences into Conga Composer to execute a mail merge download
 - Mail Merge is a technology feature that takes a template and replaces certain fields with data points in a batch operation.  Therefore, you can take a spreadsheet of names and addresses, and a template for a Letter, and print one letter customized for each person in the spreadsheet in one operation.
 
