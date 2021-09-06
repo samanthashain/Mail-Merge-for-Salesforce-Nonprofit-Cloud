@@ -1,0 +1,7 @@
+Conga Composer uses SOQL Queries to pull data into a merge.  To build a Conga Solution for a Global Tax Merge, we need to gather a spreadsheet of every Household that donated in the prior year.
+
+The SOQL query will look something like this (substitute RecordTYpeId for the Household RT Id in your org)
+
+SELECT Id, npo02__OppAmountThisYear__c, npo02__Informal_Greeting__c, npo02__OppsClosedThisYear__c, npe01__SYSTEM_AccountType__c, RecordtypeId 
+FROM Account 
+WHERE npo02__OppAmountLastYear__c>0 and RecordTypeId='0125f0000008dhCAAQ'
