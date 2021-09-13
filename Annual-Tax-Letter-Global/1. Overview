@@ -1,0 +1,7 @@
+The goal of this solution is to provide a single button that produces a downloadable file with Tax Letters for all households that donated in the current or prior year (depending on when you run the solution).
+
+The components of the solution include:
+- Conga Composer Button
+- SOQL Query
+- Recommended parameters
+- Companion video
