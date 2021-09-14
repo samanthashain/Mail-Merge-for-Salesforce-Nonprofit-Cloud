@@ -1,0 +1,9 @@
+The goal of this solution is to provide a produces a downloadable Tax Letter for the given household with data from current or prior year donations (depending on when you run the solution).
+
+The components of the solution include:
+- Conga Composer Button
+- SOQL Query
+- Sample template file (summary of gifts)
+- Sample template file (includes table of gifts)
+- Recommended parameters
+- Companion video

@@ -4,4 +4,7 @@ The SOQL query will look something like this (substitute RecordTYpeId for the Ho
 
 SELECT Id, npo02__OppAmountThisYear__c, npo02__Informal_Greeting__c, npo02__OppsClosedThisYear__c, npe01__SYSTEM_AccountType__c, RecordtypeId 
 FROM Account 
-WHERE npo02__OppAmountLastYear__c>0 and RecordTypeId='0125f0000008dhCAAQ'
+WHERE npo02__OppAmountThisYear__c>0 and RecordTypeId='0125f0000008dhCAAQ'
+
+Note: If you typically run your reports in January, you will need to update the sample query with the appropriate field API names
+Note: You may need to include additional filters (record type, checkbox for tax deductible, etc) based on your organization's processes
