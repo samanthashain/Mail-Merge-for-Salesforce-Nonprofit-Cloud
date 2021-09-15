@@ -31,3 +31,6 @@ To use the resources in this repository, you will need to:
 7. Test Solution
 8. Update or create Button
 9. Update page layout to include new solution Button
+
+## License 
+This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
