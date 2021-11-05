@@ -1,6 +1,6 @@
 Watch on YouTube!   
 
-![](https://i.imgur.com/T2MIIQa.png)](https://www.youtube.com/watch?v=gItDB0_oxcw&t=2s)
+[![](https://i.imgur.com/T2MIIQa.png)](https://www.youtube.com/watch?v=gItDB0_oxcw&t=2s)
 
 Read on [Conga's Documentation site](https://documentation.conga.com/composer/latest/anatomy-of-a-conga-composer-button-143198461.html)
 
