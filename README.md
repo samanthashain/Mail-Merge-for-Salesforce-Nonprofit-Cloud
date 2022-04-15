@@ -1,4 +1,4 @@
-# Conga-Composer-for-Nonprofits
+# Mail-Merge-for-Salesforce-Nonprofit-Cloud
 
 The goal of this project is to document and share common use cases for Conga Composer solutions in nonprofit organizations.  You an use this repository to download or copy sample Solutions.  Contributions are welcome - get in touch with me (samantha dot shain 2010 at gmail dot com) if you want to contribute but Github is a barrier to participation.
 
