@@ -9,28 +9,22 @@ The goal of this project is to document and share common use cases for Conga Com
 (4) Nonprofits that purchase a product like Conga Composer can execute basic mail merges, but may not be fully leveraging the product due to time and capacity constraints.
 
 # Proposed Solution
-(1) Create a free, public, and open source repository of common nonprofit Conga Composer solutions
-(2) Document use cases as well as complementary "bells and whistle" in Conga Composer that may be of use to nonprofit organizations
+(1) Create a free, public, and open source repository of common nonprofit mail merge solutions
+(2) Document mail merge use cases that leverage the full functionality of third party applications like Conga Composer and Apsona
 (3) Build capacity among nonprofits and reduce multiplicity of efforts by sharing solutions within the community
 
 ## Definitions
 - Conga Composer is a paid, third party application that is primarily used with the Salesforce platform
-- Other common applications (all paid) include Apsona, Nintex (fka Drawloop), SDocs, Form Titan, etc.  This repo currently focuses on Conga Composer, but could eventually expand to other platforms.
+- Other common applications (all paid) include Apsona, Nintex (fka Drawloop), SDocs, Form Titan, etc.  This repo currently focuses on Conga Composer and Apsona, but could eventually expand to other platforms.
 - A "Solution" is a bundle of directions that feeds data, templates, and preferences into Conga Composer to execute a mail merge download
 - Mail Merge is a technology feature that takes a template and replaces certain fields with data points in a batch operation.  Therefore, you can take a spreadsheet of names and addresses, and a template for a Letter, and print one letter customized for each person in the spreadsheet in one operation.
 
 ## Development
 
 To use the resources in this repository, you will need to:
-1. Ensure that you have Conga Composer installed and licensed in your Salesforce org
-2. Identify/create a new Conga Solution
-3. Add SOQL queries by testing mine (recommended platform: Workbench) and copying them into your org as custom data on the Conga Composer SOQL object
-4. Add SOQL queries to Solution
-5. Add Parameters to Solution
-6. Add Template to Solution
-7. Test Solution
-8. Update or create Button
-9. Update page layout to include new solution Button
+1. Ensure that you have Conga Composer OR Apsona installed and licensed in your Salesforce org
+1. Follow the instructions in this Repo's wiki to reproduce solutions in your target org (Production org, Sandbox, or dev org)
+1. Provide feedback / commit changes back to this repo if you have solution enhancement ideas
 
 ## License 
 This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
