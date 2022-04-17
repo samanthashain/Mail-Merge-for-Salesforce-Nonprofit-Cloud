@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Individual_Donation_Acknowledgment_Letter</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Individual Donation Acknowledgment Letter</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_370}
+&amp;Id={!Opportunity.Id}
+
+&amp;TemplateId=0T_002EAS854642
+
+&amp;TemplateGroup=DonationAcknowledgment
+&amp;UF0=1
+&amp;MFTS0=npsp__Acknowledgment_Status__c
+&amp;MFTSValue0=Acknowledged
+&amp;AC0=1
+&amp;AC1=Donor+Acknowledgement+Merged
+&amp;SC0=1
+&amp;SC1=SalesforceFile
+&amp;MFTS1=npsp__Acknowledgment_Date__c
+&amp;MFTSValue1=TODAY
+&amp;DS7=1</url>
+</WebLink>

@@ -1,0 +1,27 @@
+minimum_cumulusci_version: '3.56.0'
+project:
+    name: Mail_Merge_for_Salesforce_Nonprofit_Cloud
+    package:
+        name: Conga-Composer-for-Nonprofits
+        api_version: '54.0'
+    dependencies:
+        - github: 'https://github.com/SalesforceFoundation/NPSP'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/Mail_Merge_for_Salesforce_Nonprofit_Cloud/tests
+            options:
+                outputdir: robot/Mail_Merge_for_Salesforce_Nonprofit_Cloud/results
+
+    robot_testdoc:
+        options:
+            path: robot/Mail_Merge_for_Salesforce_Nonprofit_Cloud/tests
+            output: robot/Mail_Merge_for_Salesforce_Nonprofit_Cloud/doc/Mail_Merge_for_Salesforce_Nonprofit_Cloud_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
