@@ -1,45 +1,180 @@
-Insert Accounts:
-    sf_object: Account
-    table: Account
-    fields:
-        Name: Name
-        Description: Description
-        BillingStreet: BillingStreet
-        BillingCity: BillingCity
-        BillingState: BillingState
-        BillingPostalCode: BillingPostalCode
-        BillingCountry: BillingCountry
-        ShippingStreet: ShippingStreet
-        ShippingCity: ShippingCity
-        ShippingState: ShippingState
-        ShippingPostalCode: ShippingPostalCode
-        ShippingCountry: ShippingCountry
-        Phone: Phone
-        Fax: Fax
-        Website: Website
-        NumberOfEmployees: NumberOfEmployees
-        AccountNumber: AccountNumber
-        Site: Site
-        Type: Type
-Insert Contacts:
-    sf_object: Contact
-    table: Contact
-    fields:
-        Salutation: Salutation
-        FirstName: FirstName
-        LastName: LastName
-        Email: Email
-        Phone: Phone
-        MobilePhone: MobilePhone
-        OtherPhone: OtherPhone
-        HomePhone: HomePhone
-        Title: Title
-        Birthdate: Birthdate
-        MailingStreet: MailingStreet
-        MailingCity: MailingCity
-        MailingState: MailingState
-        MailingPostalCode: MailingPostalCode
-        MailingCountry: MailingCountry
-    lookups:
-        AccountId:
-            table: Account
+Insert APXTConga4__Composer_Host_Override__c:
+  sf_object: APXTConga4__Composer_Host_Override__c
+  fields:
+  - APXTConga4__Hostname__c
+  - Name
+Insert APXTConga4__Conga_Collection__c:
+  sf_object: APXTConga4__Conga_Collection__c
+  fields:
+  - APXTConga4__Description__c
+  - APXTConga4__Is_SF1_Enabled__c
+  - APXTConga4__SF1_Binding_sObject_Type__c
+  - Name
+Insert APXTConga4__Conga_Email_Staging__c:
+  sf_object: APXTConga4__Conga_Email_Staging__c
+  fields:
+  - APXTConga4__HTMLBody__c
+  - APXTConga4__Subject__c
+  - APXTConga4__TextBody__c
+  - APXTConga4__WhatId__c
+  - APXTConga4__WhoId__c
+Insert APXTConga4__Conga_Email_Template__c:
+  sf_object: APXTConga4__Conga_Email_Template__c
+  fields:
+  - APXTConga4__Description__c
+  - APXTConga4__HTMLBody__c
+  - APXTConga4__Is_Body_Attachment__c
+  - APXTConga4__Key__c
+  - APXTConga4__Name__c
+  - APXTConga4__Subject__c
+  - APXTConga4__Template_Group__c
+  - APXTConga4__TextBody__c
+Insert APXTConga4__Conga_Merge_Query__c:
+  sf_object: APXTConga4__Conga_Merge_Query__c
+  fields:
+  - APXTConga4__Description__c
+  - APXTConga4__Key__c
+  - APXTConga4__Name__c
+  - APXTConga4__Query__c
+Insert APXTConga4__Conga_Solution__c:
+  sf_object: APXTConga4__Conga_Solution__c
+  fields:
+  - APXTConga4__Button_Link_API_Name__c
+  - APXTConga4__Button_body_field__c
+  - APXTConga4__Composer_Parameters__c
+  - APXTConga4__Custom_Object_Id__c
+  - APXTConga4__Formula_Field_API_Name__c
+  - APXTConga4__Formula_body_field__c
+  - APXTConga4__Is_Quick_Start__c
+  - APXTConga4__Master_Object_Type_Validator__c
+  - APXTConga4__Master_Object_Type__c
+  - APXTConga4__Sample_Record_Id__c
+  - APXTConga4__Sample_Record_Name__c
+  - APXTConga4__Solution_Description__c
+  - APXTConga4__Solution_Weblink_Syntax__c
+  - APXTConga4__Weblink_Id__c
+  - Name
+Insert APXTConga4__Conga_Template__c:
+  sf_object: APXTConga4__Conga_Template__c
+  fields:
+  - APXTConga4__Description__c
+  - APXTConga4__Key__c
+  - APXTConga4__Label_Template_Use_Detail_Data__c
+  - APXTConga4__Master_Field_to_Set_1__c
+  - APXTConga4__Master_Field_to_Set_2__c
+  - APXTConga4__Master_Field_to_Set_3__c
+  - APXTConga4__Name__c
+  - APXTConga4__Template_Extension__c
+  - APXTConga4__Template_Group__c
+  - APXTConga4__Template_Type__c
+Insert APXTConga4__EventData__c:
+  sf_object: APXTConga4__EventData__c
+  fields:
+  - APXTConga4__Kind__c
+  - APXTConga4__Raw__c
+Insert APXTConga4__VersionedData__c:
+  sf_object: APXTConga4__VersionedData__c
+  fields:
+  - APXTConga4__Key__c
+  - APXTConga4__Kind__c
+  - APXTConga4__Raw__c
+  - APXTConga4__Version__c
+  - Name
+Insert APXTConga4__Composer_QuickMerge__c:
+  sf_object: APXTConga4__Composer_QuickMerge__c
+  fields:
+  - APXTConga4__Description__c
+  - APXTConga4__Weblink_ID__c
+  - APXTConga4__Weblink_Name__c
+  - Name
+  lookups:
+    APXTConga4__Conga_Solution__c:
+      table: APXTConga4__Conga_Solution__c
+Insert APXTConga4__Conga_Collection_Solution__c:
+  sf_object: APXTConga4__Conga_Collection_Solution__c
+  fields:
+  - APXTConga4__Description__c
+  - APXTConga4__Sort_Order__c
+  - Name
+  lookups:
+    APXTConga4__Conga_Collection__c:
+      table: APXTConga4__Conga_Collection__c
+    APXTConga4__Conga_Solution__c:
+      table: APXTConga4__Conga_Solution__c
+Insert APXTConga4__Conga_Solution_Email_Template__c:
+  sf_object: APXTConga4__Conga_Solution_Email_Template__c
+  fields:
+  - APXTConga4__Comments__c
+  - APXTConga4__IsDefault__c
+  lookups:
+    APXTConga4__Conga_Email_Template__c:
+      table: APXTConga4__Conga_Email_Template__c
+    APXTConga4__Conga_Solution__c:
+      table: APXTConga4__Conga_Solution__c
+Insert APXTConga4__Conga_Solution_Parameter__c:
+  sf_object: APXTConga4__Conga_Solution_Parameter__c
+  fields:
+  - APXTConga4__Comments__c
+  - APXTConga4__Name__c
+  - APXTConga4__Value__c
+  lookups:
+    APXTConga4__Conga_Solution__c:
+      table: APXTConga4__Conga_Solution__c
+Insert APXTConga4__Conga_Solution_Query__c:
+  sf_object: APXTConga4__Conga_Solution_Query__c
+  fields:
+  - APXTConga4__Alias__c
+  - APXTConga4__Comments__c
+  - APXTConga4__pv0__c
+  - APXTConga4__pv1__c
+  - APXTConga4__pv2__c
+  lookups:
+    APXTConga4__Conga_Query__c:
+      table: APXTConga4__Conga_Merge_Query__c
+    APXTConga4__Conga_Solution__c:
+      table: APXTConga4__Conga_Solution__c
+Insert APXTConga4__Conga_Solution_Report__c:
+  sf_object: APXTConga4__Conga_Solution_Report__c
+  fields:
+  - APXTConga4__Alias__c
+  - APXTConga4__Comments__c
+  - APXTConga4__Report_Id__c
+  - APXTConga4__Report_Name__c
+  - APXTConga4__pv0__c
+  - APXTConga4__pv1__c
+  - APXTConga4__pv2__c
+  lookups:
+    APXTConga4__Conga_Solution__c:
+      table: APXTConga4__Conga_Solution__c
+Insert APXTConga4__Conga_Solution_Template__c:
+  sf_object: APXTConga4__Conga_Solution_Template__c
+  fields:
+  - APXTConga4__Comments__c
+  - APXTConga4__Output_File_Name__c
+  - APXTConga4__Sort_Order__c
+  - APXTConga4__Template_Extension__c
+  lookups:
+    APXTConga4__Conga_Solution__c:
+      table: APXTConga4__Conga_Solution__c
+    APXTConga4__Conga_Template__c:
+      table: APXTConga4__Conga_Template__c
+Insert APXTConga4__Document_History__c:
+  sf_object: APXTConga4__Document_History__c
+  fields:
+  - APXTConga4__Link_Text__c
+  - APXTConga4__Master_Object_ID__c
+  - APXTConga4__URL__c
+  lookups:
+    APXTConga4__Conga_Solution__c:
+      table: APXTConga4__Conga_Solution__c
+Insert APXTConga4__Document_History_Detail__c:
+  sf_object: APXTConga4__Document_History_Detail__c
+  fields:
+  - APXTConga4__Document_Status__c
+  - APXTConga4__Email_Address__c
+  - APXTConga4__Last_Viewed__c
+  - APXTConga4__Number_of_Views__c
+  - APXTConga4__SMS_Number__c
+  lookups:
+    APXTConga4__Document_History__c:
+      table: APXTConga4__Document_History__c
