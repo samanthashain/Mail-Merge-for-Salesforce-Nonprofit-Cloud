@@ -62,6 +62,7 @@ CREATE TABLE "APXTConga4__Conga_Merge_Query__c" (
 	"APXTConga4__Query__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
+INSERT INTO "APXTConga4__Conga_Merge_Query__c" VALUES(1,'','0Q_008EAS295977','Logo','SELECT ContentDocument.Latestpublishedversion.Field_Image_URL__c FROM ContentDocumentLink WHERE LinkedEntityId = ''{pv0}''');
 INSERT INTO "APXTConga4__Conga_Merge_Query__c" VALUES(2,'','0Q_007EAS955811','Affiliations','SELECT npe5__Contact__c, npe5__Description__c, npe5__EndDate__c, npe5__Organization__c, npe5__Primary__c, npe5__Role__c, npe5__StartDate__c, npe5__Status__c, npe5__Contact__r.Description, npe5__Contact__r.Email, npe5__Contact__r.Name FROM npe5__Affiliation__c  WHERE npe5__Organization__c = ''{pv0}''');
 INSERT INTO "APXTConga4__Conga_Merge_Query__c" VALUES(3,'Conga passes an Account/Household ID into the Query.','0Q_009EAS147062','Closed Oppties Last Year','SELECT Id, Name, Closedate, Amount
 from OPPORTUNITY 
@@ -120,6 +121,7 @@ INSERT INTO "APXTConga4__Conga_Solution_Query__c" VALUES(1,'PipelineOpportunitie
 INSERT INTO "APXTConga4__Conga_Solution_Query__c" VALUES(2,'Activities','','','','','5','1');
 INSERT INTO "APXTConga4__Conga_Solution_Query__c" VALUES(3,'OrgAffiliations','','','','','2','1');
 INSERT INTO "APXTConga4__Conga_Solution_Query__c" VALUES(4,'WonOpportunities','','','','','6','1');
+INSERT INTO "APXTConga4__Conga_Solution_Query__c" VALUES(5,'Logo','','','','','1','1');
 INSERT INTO "APXTConga4__Conga_Solution_Query__c" VALUES(6,'Households','','','','','8','3');
 INSERT INTO "APXTConga4__Conga_Solution_Query__c" VALUES(7,'Opportunities','','','','','7','2');
 INSERT INTO "APXTConga4__Conga_Solution_Query__c" VALUES(8,'LabelMerge','','','','','9','4');
@@ -176,11 +178,13 @@ INSERT INTO "APXTConga4__Conga_Solution__c" VALUES(1,'Conga_Composer_Merge_Donor
 [Activities]0Q_006EAS985179,
 [OrgAffiliations]0Q_007EAS955811,
 [PipelineOpportunitie]0Q_005EAS541441,
+[Logo]0Q_008EAS295977
 
 &TemplateId=0T_005EAS391921','&QueryId=[WonOpportunities]0Q_003EAS486905,
 [Activities]0Q_006EAS985179,
 [OrgAffiliations]0Q_007EAS955811,
 [PipelineOpportunitie]0Q_005EAS541441,
+[Logo]0Q_008EAS295977&TemplateId=0T_005EAS391921','','','','','Account','Account','0015f00000GgpOoAAJ','Monastera Household','','','00b5f000000FW3H','Merge Donor Profile');
 INSERT INTO "APXTConga4__Conga_Solution__c" VALUES(2,'Conga_Composer_Merge_Annual_Tax_Letter','/apex/APXTConga4__Conga_Composer?SolMgr=1
 &serverUrl={!API.Partner_Server_URL_370}
 &Id={!Account.Id}
@@ -303,4 +307,4 @@ CREATE TABLE "APXTConga4__VersionedData__c" (
 	"Name" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-
+COMMIT;
